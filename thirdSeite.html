@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Somalia Heute</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s2">
+        <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="firstSeite.html" class="w3-button w3-block w3-black">Imperialismus in Somalia</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="secondSeite.html" class="w3-button w3-block w3-black">Nach der Kolonialzeit</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="thirdSeite.html" class="w3-button w3-block w3-black">Somalia Heute</a>
+      </div>
+      <div class="w3-col s2">
+        <a href="fünfteSeite.html" class="w3-button w3-block w3-black">Quellen</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+    <!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Somalia Heute</span></h5>
+      <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Steckbrief</span></h6>
+      <p><strong>Amtssprache: </strong>Somali, Arabisch</p>
+      <p><strong>Hauptstadt: </strong>Mogadischu</p>
+      <p><strong>Fläche: </strong>637.657 km²</p>
+      <p><strong>Einwohnerzahl: </strong>15,4 Millionen</p>
+      <p><strong>Währung: </strong>Somalia-Schilling (SOS)</p>
+      <br>
+        <center><img src="Bild Anna Clara Steckbrief.png" alt="Italian Trulli"></center>
+      <br>
+      <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Regierung</span></h6>
+      <p>Al-Shabaab regiert Somalia als Schattenregierung, die Bevölkerung fürchtet sie. In der Öffentlichkeit dürfen keine Aussagen über sie gemacht werden, denn die Folgen sind Gewalt und meist sogar der Tod. Dies musste ein Somali Journalist 2021 am eigenen Leib erfahren. Dieser wurde während eines Bombenanschlags, nachdem er sich kritisch der Terrormiliz gegenüber geäussert hatte, ermordet. Allein im ersten Halbjahr 2021 wurden 700 Zivilisten*innen bei Anschlägen von Al-Shabaab getötet. 
+        Die somalische Bevölkerung wird mit immer mehr Gefahren konfrontiert. Ein Fünftel der Bevölkerung ist bereits geflohen. Der restliche Teil wird von Al-Shabaab durch Terror und Gewalt regiert. Al-Shabaab hat in einigen Gebieten längst mehr Macht als die dortige Regierung selbst. Das liegt zum einen daran, dass sie Alternativen für die nicht funktionierende Zentralregierung bieten, wie auch daran, dass die Terrormiliz jungen Somaliern Arbeitsplätze und Bildung zur Verfügung stellen.
+        <br>
+        <center><img src="Bild Banner.png" alt="Italian Trulli"></center>
+        <br>  
+      </p>
+      <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Bildung</span></h6>
+      <p>Rund 30 - 40% der Somalischen Kinder gehen aktuell zur Schule. Da kein offizielles Bildungssystem besteht, handelt es sich meist um Koranschulen oder private Einrichtungen. Von den Erwachsenen Somalis können etwa die Hälfte der Männer lesen und schreiben, bei den Frauen sind es nur rund ein Viertel.</p>
+      <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Aktuelle Gefahren</span></h6>
+      <p>Seit dem aktuellen Konflikt zwischen Russland und der Ukraine leiden viele Länder Ostafrikas, darunter auch Somalia. Grund dafür ist, dass ein Grossteil der Grundnahrungsmittel, Weizen und Mais, aus den zwei sich gegenüberstehenden Ländern stammen. Die Brotpreise steigen stetig, und die somalische Bevölkerung befürchtet, sich kein Essen mehr leisten zu können. Denn Weizen und Mais waren zuvor schon die einzigen Nahrungsmittel, welche sich die ärmere Mehrheit in Somalia leisten konnte und mit der lang Anhaltenden Dürreperiode ist auch die Abhängigkeit gegenüber Russland und der Ukraine gestiegen. Viele Somalis vermuten, dass der Russland- Ukraine Konflikt Afrika in den Hunger treiben wird.</p>
+      <div class="w3-col s2">
+        <a href="index.html" class="w3-button w3-block w3-black"><strong>back</strong></a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Anna Clara Kohler & Mina Koch</p>
+  </footer>
+  
+  <script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+  
+</body>
+</html>

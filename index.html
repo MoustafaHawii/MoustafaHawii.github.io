@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="firstSeite.html" class="w3-button w3-block w3-black">Imperialismus in Somalia</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="secondSeite.html" class="w3-button w3-block w3-black">Nach der Kolonialzeit</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="thirdSeite.html" class="w3-button w3-block w3-black">Somalia Heute</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="fünfteSeite.html" class="w3-button w3-block w3-black">Quellen</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <center><img src="Punch_Rhodes_Colossus.png" alt="Italian Trulli"></center>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Eine Arbeit von Anna Clara Kohler & Mina Koch</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-blue" style="font-size:90px">Kolonialzeit<br> in Somalia</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-black">Kantonsschule Solothurn</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Imperialismus in Somalia</span></h5>
+    <p>Das heutige Somalia gehörte ca. vom 2. bis zum 7. Jahrhundert zum äthiopischen Grossreich an. Zu dieser Zeit entstand der Islam. Die Religion wurde schliesslich auch zu Beginn des 9. Jahrhunderts nach Somalia gebracht...</p>
+    <div class="w3-col s2">
+      <a href="firstSeite.html" class="w3-button w3-block w3-black"><strong>Read more</strong></a>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nach der Kolonialzeit</span></h5>
+    <p>Die Wurzeln Somalias politischer Instabilität liegen in den kolonialen Grenzziehungen. Diese sorgten nämlich dafür, dass grosse Teile von ethnischen Somalis zu Minderheiten in den Nachbarsländern Äthiopien und Kenia wurden. Vor der Unabhängigkeit war Somalia zwischen den Kolonialmächten Frankreich, Grossbritannien und Italien aufgeteilt...</p>
+   <div class="w3-col s2">
+      <a href="secondSeite.html" class="w3-button w3-block w3-black"><strong>Read more</strong></a>
+    </div>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Somalia Heute</span></h5>
+    <p><strong>Amtssprache: </strong>Somali, Arabisch</p>
+      <p><strong>Hauptstadt: </strong>Mogadischu</p>
+      <p><strong>Fläche: </strong>637.657 km²</p>
+      <p><strong>Einwohnerzahl: </strong>15,4 Millionen</p>
+      <p><strong>Währung: </strong>Somalia-Schilling (SOS)</p>
+      <p>...</p>
+      <br>
+     <div class="w3-col s2">
+      <a href="thirdSeite.html" class="w3-button w3-block w3-black"><strong>Read more</strong></a>
+    </div>
+</div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Anna Clara Kohler & Mina Koch</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
