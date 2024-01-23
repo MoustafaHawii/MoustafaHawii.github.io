@@ -3,59 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>moustafa's website</title>
+    <title>Moustafa Hawi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .bg-primary {
+            background-color: #0D0C1D;
+        }
+        .text-primary {
+            color: #C0C0C0;
+        }
+        .text-secondary {
+            color: #7B7FDA;
+        }
+        .icon {
+            color: #FFF;
+            margin-bottom: 1rem;
+        }
+        .border-primary {
+            border-color: #7B7FDA;
+        }
+        input, textarea, button {
+            margin: 0.5rem 0;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 0.5rem;
+            border: 1px solid #7B7FDA;
+            border-radius: 0.25rem;
+            color: #FFF;
+            background-color: transparent;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.25rem;
+            color: #FFF;
+            background-color: #7B7FDA;
+            cursor: pointer;
+        }
+        .social-icons i {
+            color: #FFF;
+            margin: 0 0.5rem;
+        }
+        @media (min-width: 768px) {
+            .section {
+                padding: 4rem;
+            }
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div id="who_am_i" class="who_am_i">
-            
+<body class="bg-primary text-primary">
+
+    <!-- Introduction Section -->
+    <div class="section" id="home">
+        <h1 class="text-6xl text-secondary mb-4">Hello, <br> I am Moustafa Hawi</h1>
+        <img src="https://placehold.co/200x200" alt="Placeholder image for Moustafa Hawi" class="rounded-full border-4 border-primary p-2 mb-4">
+        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="h-1 w-16 bg-secondary mx-auto my-8"></div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section" id="about">
+        <div class="mb-8">
+            <img src="https://placehold.co/150x150" alt="Placeholder image for about section" class="border-2 border-primary p-2">
         </div>
-    </header>
-    <main>
-        <div id="my_journey" class="my_journey">
+        <h2 class="text-5xl text-secondary mb-4">Who am I ???</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
 
+    <!-- Journey and Goals Section -->
+    <div class="section flex flex-col md:flex-row justify-between text-left" id="journey-goals">
+        <div class="md:w-1/2">
+            <h3 class="text-4xl text-secondary mb-4">My journey</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div id="my_goals" class="my_goals">
-
+        <div class="md:w-1/2">
+            <h3 class="text-4xl text-secondary mb-4">My goals</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div id="technologies" class="technologies">
-            <div id="programming_lang" class="programming_lang">
-                <div id="java" class="java">
+    </div>
 
-                </div>
-                <div id="python" class="python">
-
-                </div>
-                <div id="ruby" class="ruby">
-
-                </div>
-                <div id="js" class="js">
-
-                </div>
-                <div id="bash" class="bash">
-
-                </div>
-                <div id="powershell" class="powershell">
-
-                </div>
-                <div id="database" class="database">
-
-                </div>
-            </div>
-            <div id="tools_software" class="tools_software">
-
-            </div>
-            <div id="hardware" class="hardware">
-
-            </div>
+    <!-- Skills Section -->
+    <div class="section grid grid-cols-2 md:grid-cols-3 gap-4" id="skills">
+        <div>
+            <i class="fas fa-coffee fa-3x icon"></i>
+            <h4 class="text-3xl text-secondary mb-2">Java</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div id="contact_me" class="contact_me">
-
+        <div>
+            <i class="fas fa-laptop-code fa-3x icon"></i>
+            <h4 class="text-3xl text-secondary mb-2">Python</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-    </main>
-    <footer>
+        <div>
+            <i class="fas fa-gem fa-3x icon"></i>
+            <h4 class="text-3xl text-secondary mb-2">Ruby</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Repeat for other skills as per the screenshot -->
+    </div>
 
-    </footer>
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2 class="text-5xl text-secondary mb-4">Contact me</h2>
+        <input type="email" placeholder="mail">
+        <textarea placeholder="your text"></textarea>
+        <button type="submit">submit</button>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="section bg-black py-4" id="footer">
+        <div class="social-icons">
+            <i class="fab fa-facebook-f fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin-in fa-2x"></i>
+        </div>
+    </div>
+
 </body>
 </html>
